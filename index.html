@@ -5,6 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>INFO2180 Project 2</title>
  <link rel="stylesheet" href="styles.css">
+ <script src="scripts.js"></script>
 </head>
 <body>
 
@@ -47,7 +48,7 @@
                     <input type="text" id="login_username" name="username"><br>
                     <label for="password">Password</label><br>
                     <input type="password" id="login_password" name="password"><br>
-                    <input type="submit" id ="userLogin" class="btn" />
+                    <button type="submit" class="btn"  id ="userLogin" /> login</button>
                 </form>
                 </div>
 
@@ -111,6 +112,43 @@
                         </tbody>
                     </table>
                 </div>
+
+
+
+
+
+                <div class="jobdetails">
+                    <h1 id="job_title"></h1>
+                    <p id="issue-id"></p>
+                    <div id="info">
+                        <div id="decsription">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita quis qui sunt magnam!
+                                Odio alias ut perspiciatis eum! Nulla dolorum veniam fugit dolores repudiandae. Minus
+                                tenetur ipsa quidem soluta. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Modi laboriosam omnis laborum! Facilis, nisi porro. Blanditiis veniam iure voluptate
+                                at eum odio magni reiciendis! Tempore repudiandae perspiciatis beatae velit tempora!
+                            
+                            </p>
+                            <p class="issue-update">Issue created on</p>
+                            <p class="issue-update">Last update on</p>
+                        </div>
+                        <div id="dets">
+                            <div>
+                                <h4>Assigned To</h4>
+                                <p id="issue-assignee"></p>
+                                <h4>Type</h4>
+                                <p id="issue-type"></p>
+                                <h4>Priority</h4>
+                                <p id="issue-priority"></p>
+                                <h4>Status</h4>
+                                <p id="job-status"></p>
+                            </div>
+                            <button id="close-issue" class="btn btn1">Mark As Closed</button>
+                            <br />
+                            <button id="in-progress-issue" class="btn btn2">Mark In Progress</button>
+                        </div>
+                    </div>
     
         </main>
     
