@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>INFO2180 Project 2</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class = "container">
+
+    <header>
+        <ul>
+            <li>
+                <li><img src="bug.png" alt="bug" /></li>
+                <h2>BugMe Issue Tracker</h2>
+            </li>
+        </ul>
+    </header>
+
+    <div class = "home">
+        <ul>
+            <li id="home" >
+                <img src="home.png" alt="home" />Home
+            </li>
+            <li id="home" >
+                <img src="adduser.png" alt="add-user" />Add User
+            </li>
+            <li id="home" >
+                <img src="addissue.png" alt="add-issue" />New Issue
+            </li>
+            <li id="home" class ="log-out">
+                <img src="logout.png" alt="logout" />Logout
+            </li>
+        </ul>
+    </div>
+    
+    <div id = "main-content">    
+        <main>
+
+
+            <div class = "login">
+                <h1>Login</h1>
+                <form>
+                    <label for="username">Username</label><br>
+                    <input type="text" id="login_username" name="username"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="login_password" name="password"><br>
+                    <input type="submit" id ="userLogin" class="btn" />
+                </form>
+                </div>
+
+        <div class = "add_user">
+            <h1>New User</h1>
+            <form>
+                <label for="firstname">Firstname</label><br>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Lastname</label><br>
+                <input type="text" id="lastname" name="lastname"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Submit" class="btn" />
+            </form>
+        
+        
+            </div>
+        
+            <div class = "new_issue">
+                <h1>Create Issue</h1>
+                <form>
+                    <label for="title">Title</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="description">Description</label><br>
+                    <input type="text" id="description" name="description"><br>
+                    <label for="assignedto">Assigned To</label><br>
+                    <input type="text" id="assignedto" name="assignedto"><br>
+                    <label for="password">Priority</label><br>
+                    <input type="text" id="priority" name="priority"><br>
+                    <input type="submit" value="Submit" class="btn" />
+                </form>
+        
+        
+        
+        
+                <div class="issues">
+                    <div id="header">
+                        <h1>Issues</h1>
+                        <button id="new-issue" class="btn">Create New Issue</button>
+                    </div>
+                    <ul>
+                        <li>Filter By:</li>
+                        <li id="active-filter" class="filter">ALL</li>
+                        <li class="filter" >OPEN</li>
+                        <li class="filter" >MY TICKETS</li>
+                    </ul>
+                    <table>
+                        <thead id="table-header">
+                            <tr>
+                                <th>Title</th>
+                                <th>Type</th>
+                                <th id="issue-status">Status</th>
+                                <th>Assigned To</th>
+                                <th>Created</th>
+                            </tr>
+                        </thead>
+                        <tbody id="issues-table">
+    
+                        </tbody>
+                    </table>
+                </div>
+    
+        </main>
+    
+    
+    </div>
+   
+
+
+</div>
