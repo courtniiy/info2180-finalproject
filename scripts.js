@@ -170,8 +170,8 @@ function bugme(){
 
 		else{
 
-			let new_user = [$("#adduserfirstname").text(), $("#adduserlastname").text(), $("#adduseremail").text()
-			("#adduserpassword").text()	];
+			let new_user = [firstname, lastname, email
+			,password	];
 
 			/*function to add user to database */
 		}
