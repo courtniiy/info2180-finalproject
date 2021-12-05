@@ -12,7 +12,7 @@ function bugme(){
 
 	function empty(txt) 
 	{
-	 if (txt.length === 0)
+	 if (txt.length == 0)
 	   {   
 		  return true; 
 	   }  	
@@ -34,20 +34,21 @@ function bugme(){
 
 
 	$( "#userLogin" ).click(function() {
-
-		if (empty($("#login_username").text())){
+		email = document.getElementById("login_username").value;
+		password = document.getElementById("login_username").value;
+		if ( empty(email) ){
 			alert("Email Address field is emty");
 		}
 
-		else if (validateEmail($("#login_username").text())== false){
+		else if (validateEmail(email)== false){
 			alert("Please enter a valid email address");
 		}
 
-		else if (empty($("#login_password").text())){
+		else if (empty(password)){
 			alert("Password field is emty");
 		}
 
-		else if (validPassword($("#login_password").text()) == false){
+		else if (validPassword(password) == false){
 			alert("Password not valid!");
 		}
 
@@ -139,26 +140,31 @@ function bugme(){
 
 	$("add_user_submit").click(function() {
 
-		if (empty($("#adduserfirstname").text())){
+		email = document.getElementById("adduseremail").value;
+		password = document.getElementById("adduserpassword").value;
+		firstname = document.getElementById("adduserfirstname").value;
+		lastname = document.getElementById("adduserlastname").value;
+
+		if (empty(firstname)){
 			alert("First name field is emty");
 		}
 
-		else if (empty($("#adduserlastname").text())){
+		else if (empty(lastname)){
 			alert("Last name field is emty");
 		}
-		else if (empty($("#adduseremail").text())){
+		else if (empty(email)){
 				alert("Email Address field is emty");
 			}
 
-		else if (validateEmail($("#adduseremail").text())== false){
+		else if (validateEmail(email)== false){
 				alert("Please enter a valid email address");
 			}
 
-		else if (empty($("#adduserpassword").text())){
+		else if (empty(password)){
 				alert("Password field is emty");
 			}
 
-		else if (validPassword($("#adduserpassword").text()) == false){
+		else if (validPassword(password) == false){
 				alert("Password not valid!");
 			}
 
