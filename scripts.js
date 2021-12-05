@@ -12,13 +12,21 @@ function bugme(){
     let login = button.getElementsByTagName('button')[0];
 
 	function loginUser(){
-		$("jobdetails").setAttribute("id", "unhide");
+		if (/*funtion to verify password*/ == true){
+			$(".issues").show();
+			$(".login").hide();
+		}
+
+		else{
+			$("#loginAlert").innerHTML("Password is incorrect!");
+	}
 	}
 	
 	
 	login.addEventListener('click', (event) => {
+		event.preventDefault();
         loginUser();
-        event.preventDefault();
+        
         
     })   
 
