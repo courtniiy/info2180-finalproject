@@ -48,53 +48,20 @@
         <main>
 
 
-            <div class = "login", id = login>
+            <div class = "login" id = login>
                 <h1>Login</h1>
                 <form>
                     <label for="username">Username</label><br>
                     <input type="text" id="login_username" name="username"><br>
                     <label for="password">Password</label><br>
                     <input type="password" id="login_password" name="password"><br>
-                    <button type="submit" class="btn"  id ="userLogin" /> login</button>
+                    <button type="submit" class="btn"  id ="userLogin" /> Login</button>
                 </form>
                     <p id = "loginAlert"></p>
                 </div>
 
-        <div class = "add_user">
-            <h1>New User</h1>
-            <form>
-                <label for="firstname">Firstname</label><br>
-                <input type="text" id="firstname" name="firstname"><br>
-                <label for="lastname">Lastname</label><br>
-                <input type="text" id="lastname" name="lastname"><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="password">Password</label><br>
-                <input type="password" id="password" name="password"><br>
-                <input type="submit" value="Submit" class="btn" />
-            </form>
-        
-        
-            </div>
-        
-            <div class = "new_issue">
-                <h1>Create Issue</h1>
-                <form>
-                    <label for="title">Title</label><br>
-                    <input type="text" id="title" name="title"><br>
-                    <label for="description">Description</label><br>
-                    <input type="text" id="description" name="description"><br>
-                    <label for="assignedto">Assigned To</label><br>
-                    <input type="text" id="assignedto" name="assignedto"><br>
-                    <label for="password">Priority</label><br>
-                    <input type="text" id="priority" name="priority"><br>
-                    <input type="submit" value="Submit" class="btn" />
-                </form>
-        
-        
-        
-        
-                <div class="issues">
+
+                <div class="issues" id ="issues">
                     <div id="header">
                         <h1>Issues</h1>
                         <button id="new-issue" class="btn">Create New Issue</button>
@@ -121,7 +88,37 @@
                     </table>
                 </div>
 
-
+        <div class = "add_user">
+            <h1>New User</h1>
+            <form>
+                <label for="firstname">Firstname</label><br>
+                <input type="text" id="adduserfirstname" name="firstname"><br>
+                <label for="lastname">Lastname</label><br>
+                <input type="text" id="adduserlastname" name="lastname"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="adduseremail" name="email"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="adduserpassword" name="password"><br>
+                <input type="submit" value="Submit" class="btn" id = "add_user_submit" />
+            </form>
+        
+        
+            </div>
+        
+            <div class = "new_issue">
+                <h1>Create Issue</h1>
+                <form>
+                    <label for="title">Title</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="description">Description</label><br>
+                    <input type="text" id="description" name="description"><br>
+                    <label for="assignedto">Assigned To</label><br>
+                    <input type="text" id="assignedto" name="assignedto"><br>
+                    <label for="password">Priority</label><br>
+                    <input type="text" id="priority" name="priority"><br>
+                    <input type="submit" value="Submit" class="btn" />
+                </form>
+        
 
 
 
